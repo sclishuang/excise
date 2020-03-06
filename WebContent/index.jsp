@@ -68,7 +68,7 @@
         	// insertImg 是插入图片的函数，editor 是编辑器对象，result 是服务器端返回的结果
         	// 举例：假如上传图片成功后，服务器端返回的是 [url,url,...] 这种格式，即可这样插入图片：
         	for(var i in result){// result 必须是一个 JSON 格式字符串！！！否则报错
-        		insertImg('${pageContext.request.contextPath}/static/file/'+result[i]);
+        		insertImg('${pageContext.request.contextPath}/statics/file/'+result[i]);
         	}
     	}
     }
