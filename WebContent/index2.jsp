@@ -8,61 +8,40 @@
 </head>
 <body>
 	
-	<div style="width:1024px">
+	
 	<table border="1" bgcolor="lightblue">
 		<tr>
-			<td><button>添加产品内容</button></td>
-			<td><select>选择产品类别</select></td>
-			<td><input type="text"></td>
-			<td><button>搜索</button></td>
-		</tr>
-		
-		<tr>
-			<td colspan="4"><button>中文产品</button></td>
-		</tr>
-		
-		
-		<tr>
-			<td>选择语言</td>
-			<td colspan="3"><input type="radio" checked="checked">中文</td>
+			<td style="width:150px;">招聘对象</td>
+			<td style="width:400px;"><input type="text" placeholder="行业客户经理"  required="required"/></td>
 		</tr>
 		<tr>
-			<td>产品分类</td>
-			<td><select></select></td>
-			<td>发布日期</td>
-			<td><input></td>
+			<td>招聘对象</td>
+			<td><input type="text" placeholder="行业客户经理"  required="required"/></td>
 		</tr>
 		<tr>
-			<td>1</td>
-			<td>2</td>
-			<td>3</td>
-			<td>4</td>
+			<td>招聘对象</td>
+			<td><input type="text" placeholder="行业客户经理"  required="required"/></td>
 		</tr>
 		<tr>
-			<td>1</td>
-			<td>2</td>
-			<td>3</td>
-			<td>4</td>
+			<td>招聘对象</td>
+			<td><input type="text" placeholder="行业客户经理"  required="required"/></td>
 		</tr>
 		<tr>
-			<td>1</td>
-			<td><textarea rows="15" cols="40"></textarea></td>
-			<td>3</td>
-			<td><img src="${pageContext.request.contextPath}/statics/2.png"></td>
+			<td>招聘对象</td>
+			<td><input type="text" placeholder="行业客户经理"  required="required"/></td>
 		</tr>
 		<tr>
-			<td colspan="4">产品内容</td>
+			<td>招聘对象</td>
+			<td><input type="text" placeholder="行业客户经理"  required="required"/></td>
 		</tr>
-		
-		
 		<tr>
-			
-			<td colspan="4"><div id="div1">
+			<td>555</td>
+			<td><div id="div1">
 			
 			</div></td>
 		</tr>
 	</table>
-		</div>	
+			
 	
 	
 	
@@ -72,7 +51,7 @@
     var E = window.wangEditor;
     var editor = new E('#div1');
  	// 上传图片到服务器(处理上传的后台代码)
-    editor.customConfig.uploadImgServer = '/upload';
+    editor.customConfig.uploadImgServer = '${pageContext.request.contextPath}/upload';
  	// 隐藏“网络图片”菜单(true是显示--默认，false隐藏)
     editor.customConfig.showLinkImg = false;
  	// 将每张图片大小限制为 3M(单位为字节)
@@ -93,32 +72,6 @@
         	}
     	}
     }
- 	
- 	editor.customConfig.pasteFilterStyle = true;
- 	
- 	editor.customConfig.pasteIgnoreImg = true;
- 	
- 	editor.customConfig.colors = [
-        'rgba(255,0,0,0.3)',
-        'blue',
-        'rgb(0,255,0)',
-        '#c24f4a',
-        '#8baa4a',
-        '#7b5ba1',
-        '#46acc8',
-        '#ffffff'
-    ];
- 	
- 	editor.customConfig.menus = [
-        'fontName',
-        'fontSize',
-        'italic',
-        'underline',
-        'strikeThrough',
-        'foreColor',
-        'backColor',
-        'image'
-    ]
  	
     editor.create();
 </script>
